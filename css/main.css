@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica", "Arial", "sans-serif";
+    line-height: 1.5;
+    /* The ruel below will apply 4em of padding to the top and bottom, and 1em of padding to the left and right of the box. */
+    padding:  4em 1em;
+    color: #555;
+}
+
+.gallery{
+    width: 90%;
+    margin:1rem auto;
+    list-style: none;
+}
+
+
+ figure{
+        text-align: center;
+        display: block;
+        max-width: 100%; 
+        margin: 0 auto;    
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    background-color: #efefef;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    
+    img{
+        max-width: 90%;
+    }
+    
+   .gallery li{
+        float: left;
+        width: 100%;
+        box-shadow: 1px 1px 2px #333; 
+        padding: 3rem;
+        margin: 2%;
+}
+    
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    
+    img{
+        max-width: 90%;
+    }  
+    
+    .gallery li{
+        float: left;
+        width: 48%;
+        height: auto;
+        box-shadow: 1px 1px 2px #333; 
+        padding: 1rem;
+        margin: 1%;
+    
+}   
+}
+
+@media screen and (min-width: 1201px) {
+
+    
+    img{
+        max-width: 100%;
+    }
+    
+    .gallery li{
+        float: left;
+        width: 23%;
+        height: auto;
+        box-shadow: 1px 1px 2px #333; 
+        padding: 1rem;
+        margin: 1%; 
+}
+}
